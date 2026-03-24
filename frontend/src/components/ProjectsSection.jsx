@@ -121,34 +121,58 @@ const ProjectsSection = () => {
                   </div>
 
                   {/* Project Info */}
-                  <div className="p-6 space-y-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
-                        {project.title}
-                      </h3>
-                      <p className="text-gray-400 text-sm leading-relaxed">
-                        {project.description}
-                      </p>
-                    </div>
+                  {/* Project Info */}
+<div className="p-6 space-y-4">
+  <div>
+    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+      {project.title}
+    </h3>
+    <p className="text-gray-400 text-sm leading-relaxed">
+      {project.description}
+    </p>
+  </div>
 
-                    {/* Tags */}
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag, index) => (
-                        <Badge
-                          key={index}
-                          variant="outline"
-                          className="border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 transition-colors duration-300"
-                        >
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
+  {/* Problem Solved */}
+  {project.problemSolved && (
+    <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-xl p-4">
+      <p className="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-1">💡 Problem Solved</p>
+      <p className="text-gray-300 text-sm leading-relaxed">{project.problemSolved}</p>
+    </div>
+  )}
 
-                    {/* Image Counter */}
-                    <div className="text-xs text-gray-500 pt-2">
-                      {currentIndex + 1} / {totalImages} images
-                    </div>
-                  </div>
+  {/* Impact Points */}
+  {project.impact && (
+    <div className="space-y-2">
+      <p className="text-xs font-semibold text-cyan-400 uppercase tracking-wider"> Impact & Results</p>
+      <ul className="space-y-1">
+        {project.impact.map((point, idx) => (
+          <li key={idx} className="flex items-start gap-2 text-sm text-gray-300">
+            <span className="text-cyan-400 mt-0.5 shrink-0">✓</span>
+            <span>{point}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  {/* Tags */}
+  <div className="flex flex-wrap gap-2">
+    {project.tags.map((tag, index) => (
+      <Badge
+        key={index}
+        variant="outline"
+        className="border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 transition-colors duration-300"
+      >
+        {tag}
+      </Badge>
+    ))}
+  </div>
+
+  {/* Image Counter */}
+  <div className="text-xs text-gray-500 pt-2">
+    {currentIndex + 1} / {totalImages} images
+  </div>
+</div>
                 </div>
               );
             })}

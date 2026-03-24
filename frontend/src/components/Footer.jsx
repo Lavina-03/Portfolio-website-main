@@ -73,7 +73,7 @@ const Footer = () => {
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-4">
+              {/* <div className="flex gap-4">
                 <a
                   href="#"
                   className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-cyan-500 transition-all duration-300"
@@ -95,7 +95,7 @@ const Footer = () => {
                 >
                   <Github className="w-5 h-5" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -104,14 +104,14 @@ const Footer = () => {
             <p className="text-gray-500 text-sm">
               © {currentYear} Lavina Kalda. All rights reserved.
             </p>
-            <div className="flex gap-6">
+            {/* <div className="flex gap-6">
               <button className="text-gray-500 hover:text-cyan-400 transition-colors duration-300 text-sm">
                 Privacy Policy
               </button>
               <button className="text-gray-500 hover:text-cyan-400 transition-colors duration-300 text-sm">
                 Terms of Service
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

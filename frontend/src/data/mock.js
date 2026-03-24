@@ -52,7 +52,14 @@ export const projects = [
   {
     id: 1,
     title: "E-Commerce Platform & Admin Panel",
-    description: "Worked on an existing e-commerce website that was already live but had multiple technical issues. Handled both the main website and admin panel, resolving broken button functionality, product display bugs, and layout errors. Also improved the admin panel usability and ensured all data reflected correctly on the website.",
+    description: "Worked on a live e-commerce website facing critical technical failures affecting sales and operations. Diagnosed and resolved broken checkout buttons, product display bugs, and layout errors across multiple pages. Rebuilt the admin panel flow to ensure real-time data accuracy between inventory, orders, and the live storefront.",
+    impact: [
+      "Fixed broken checkout & cart button functionality that was blocking purchases",
+      "Resolved product display bugs causing incorrect items to appear on listings",
+      "Improved admin panel usability — reducing management time by streamlining order & inventory views",
+      "Ensured live data sync between admin panel and customer-facing website"
+    ],
+    problemSolved: "The client was losing sales daily due to broken functionality on a live store. Every bug fixed directly restored revenue.",
     images: [
       "SC1.png",
       "SC2.png",
@@ -66,7 +73,14 @@ export const projects = [
   {
     id: 2,
     title: "Wallet Automation Website",
-    description: "Built a landing page and dashboard interface for a startup in the AI automation space. Handled layout design, responsiveness, and front-end interactions for a complete web solution.",
+    description: "Designed and developed a full web presence for an AI automation startup from scratch. Built a high-converting landing page and a feature-rich dashboard interface that communicates the product's value clearly to investors and users alike.",
+    impact: [
+      "Built a fully responsive landing page optimized for conversions",
+      "Designed an intuitive dashboard UI for the automation product",
+      "Handled all front-end interactions and animations for a polished experience",
+      "Delivered a startup-ready web presence used for investor demos"
+    ],
+    problemSolved: "The startup needed a professional web presence fast to support investor pitches and early user onboarding.",
     images: [
       "TD1.png",
       "TD2.png",
